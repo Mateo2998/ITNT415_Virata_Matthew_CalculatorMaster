@@ -1,3 +1,18 @@
+def addition(n):
+    userValue = 0
+    x = n
+    programAdd = True
+    while programAdd == True:
+        userValue = input("Input Value to Add: ")
+        if userValue == "q" or userValue == "Q":
+            programAdd = False
+            return x
+        else:
+            try:
+                x = x + float(userValue)
+            except:
+                print("Invalid input. Please enter a number.")
+
 programCalculator = True
 n = 0
 while programCalculator == True:
@@ -11,3 +26,8 @@ while programCalculator == True:
 
     if userChoice == "Exit" or userChoice == "exit":
         programCalculator = False
+
+    else:
+        if userChoice == "+":
+            print("You selected Addition!\nType q if done")
+            n = addition(n)
