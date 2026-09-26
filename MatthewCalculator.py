@@ -49,3 +49,6 @@ while programCalculator == True:
         elif userChoice == "-":
             print("You selected Subtraction!\nType q if done")
             n = subtraction(n)
+        elif userChoice == "/":
+            print("You selected Division!\nType q if done")
+            n = division(n)
