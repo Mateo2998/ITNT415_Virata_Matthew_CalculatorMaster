@@ -11,3 +11,8 @@ while programCalculator == True:
 
     if userChoice == "Exit" or userChoice == "exit":
         programCalculator = False
+
+    else:
+        if userChoice == "+":
+            print("You selected Addition!\nType q if done")
+            
