@@ -31,3 +31,6 @@ while programCalculator == True:
         if userChoice == "+":
             print("You selected Addition!\nType q if done")
             n = addition(n)
+        elif userChoice == "-":
+            print("You selected Subtraction!\nType q if done")
+            n = subtraction(n)
