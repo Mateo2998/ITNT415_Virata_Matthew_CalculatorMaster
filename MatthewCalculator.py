@@ -74,3 +74,10 @@ while programCalculator == True:
         elif userChoice == "/":
             print("You selected Division!\nType q if done")
             n = division(n)
+        elif userChoice == "*":
+            print("You selected Multiplication!\nType q if done")
+            n = multiplication(n)
+        elif userChoice == "clear" or userChoice == "Clear":
+            n = 0
+        else:
+            print("Invalid option. Select a different one.")
