@@ -13,6 +13,21 @@ def addition(n):
             except:
                 print("Invalid input. Please enter a number.")
 
+def subtraction(n):
+    userValue = 0
+    x = n
+    programSubtract = True
+    while programSubtract == True:
+        userValue = input("Input Value to Subtract: ")
+        if userValue == "q" or userValue == "Q":
+            programSubtract = False
+            return x
+        else:
+            try:
+                x = x - float(userValue)
+            except:
+                print("Invalid input. Please enter a number.")
+
 programCalculator = True
 n = 0
 while programCalculator == True:
