@@ -50,6 +50,26 @@ def division(n):
             except:
                 print("Invalid input. Please enter a number.")
 
+def multiplication(n):
+    userValue = 0
+    if n == 0:
+        n = 1
+
+    x = n
+    programMultiply = True
+
+    while programMultiply == True:
+        userValue = input("Input Value to Multiply: ")
+
+        if userValue == "q" or userValue == "Q":
+            programMultiply = False
+            return x
+        else:
+            try:
+                x = x * float(userValue)
+            except:
+                print("Invalid input. Please enter a number.")
+
 programCalculator = True
 n = 0
 while programCalculator == True:
