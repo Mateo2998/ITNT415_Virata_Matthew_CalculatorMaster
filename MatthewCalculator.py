@@ -28,6 +28,28 @@ def subtraction(n):
             except:
                 print("Invalid input. Please enter a number.")
 
+def division(n):
+    userValue = 0
+    x = n
+    programDivide = True
+
+    while programDivide == True:
+        userValue = input("Input Value to Divide: ")
+
+        if userValue == "q" or userValue == "Q":
+            programDivide = False
+            return x
+        else:
+            try:
+                if x == 0:
+                    x = float(userValue)
+                elif float(userValue) == 0:
+                    print("Cannot divide by zero.")
+                else:
+                    x = x / float(userValue)
+            except:
+                print("Invalid input. Please enter a number.")
+
 programCalculator = True
 n = 0
 while programCalculator == True:
@@ -49,3 +71,6 @@ while programCalculator == True:
         elif userChoice == "-":
             print("You selected Subtraction!\nType q if done")
             n = subtraction(n)
+        elif userChoice == "/":
+            print("You selected Division!\nType q if done")
+            n = division(n)
